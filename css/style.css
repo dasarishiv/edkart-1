@@ -12,6 +12,7 @@ a, a:focus, a:hover {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 /*main styles*/
@@ -455,8 +456,91 @@ section {
 }
 
 footer {
-  background: #65617D;
-  padding: 50px 0 30px;
+  background: #D0CFD8;
+  padding: 50px 0 20px;
+}
+
+footer .col-half-offset {
+  margin-left: 4.166666667%;
+}
+
+footer .footer-heading {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000;
+}
+
+footer .footer-links li {
+  margin-bottom: 10px;
+}
+
+footer .footer-links a {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 400;
+}
+
+footer .social-links {
+  margin: 20px 0;
+}
+
+footer .social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+footer .social-links .facebook {
+  background-image: url(../images/facebook.png);
+}
+
+footer .social-links .whatsapp {
+  background-image: url(../images/whatsapp.png);
+}
+
+footer .social-links .youtube {
+  background-image: url(../images/youtube.png);
+}
+
+footer .social-links .googleplus {
+  background-image: url(../images/google-plus.png);
+}
+
+footer .social-links .twitter {
+  background-image: url(../images/twitter.png);
+}
+
+footer .social-links .f-like {
+  background-image: url(../images/f-like.png);
+  width: 65px;
+  margin-left: 20px;
+}
+
+footer .social-links .f-share {
+  background-image: url(../images/f-share.png);
+  width: 78px;
+}
+
+footer .social-links .fb-txt {
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+  display: inline-block;
+}
+
+footer .copy-right {
+  border-top: 1px solid #65617D;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 17px;
+  color: #65617D;
+  font-weight: 500;
+  padding: 20px 0;
+  background: url(../images/cards.png) no-repeat right center;
 }
 
 /*@desktop*/

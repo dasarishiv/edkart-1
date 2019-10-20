@@ -13,6 +13,7 @@ a,a:focus,a:hover{
 
 ul{
     list-style: none;
+    padding: 0;
 }
 
 
@@ -463,8 +464,86 @@ section{
 
   footer{
 
-    background: #65617D;
-    padding: 50px 0 30px
+    background: #D0CFD8;
+    padding: 50px 0 20px;
+
+    .col-half-offset{
+        margin-left:4.166666667%
+    }
+
+    .footer-heading{
+        font-size: 17px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .footer-links{
+        li{
+            margin-bottom: 10px;
+        }
+        a{
+            font-size: 15px;
+            color: #000000;
+            font-weight: 400;
+        }
+    }
+
+    .social-links{
+        margin: 20px 0;
+        a{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin-right: 20px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+        }
+
+        .facebook{
+            background-image: url(../images/facebook.png) ;
+        }
+        .whatsapp{
+            background-image: url(../images/whatsapp.png);
+        }
+        .youtube{
+            background-image: url(../images/youtube.png);
+        }
+        .googleplus{
+            background-image: url(../images/google-plus.png);
+        }
+        .twitter{
+            background-image: url(../images/twitter.png);
+        }
+        .f-like{
+            background-image: url(../images/f-like.png);
+            width: 65px;
+            margin-left: 20px;
+        }
+        .f-share{
+            background-image: url(../images/f-share.png);
+            width: 78px;
+        }
+        .fb-txt{
+            font-size: 13px;
+            font-weight: 700;
+            color: #000;
+            
+            display: inline-block;
+        }
+    }
+
+
+    .copy-right{
+        border-top: 1px solid #65617D;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 17px;
+        color: #65617D;
+        font-weight: 500;
+        padding:20px 0;
+        background: url(../images/cards.png) no-repeat right center;
+    }
   }
 
 
