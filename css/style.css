@@ -1,0 +1,504 @@
+/* Roboto font styles*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a, a:focus, a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*main styles*/
+.top-wrapper {
+  padding: 30px 0;
+}
+
+.top-wrapper .banner-tabpanel {
+  margin-top: 30px;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 0;
+}
+
+.navbar-brand > img {
+  height: 100%;
+  padding: 15px 30px;
+  width: auto;
+}
+
+#menuToggle {
+  position: relative;
+  top: 30px;
+  float: left;
+  width: 45px;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+   * Just a quick hamburger
+   */
+#menuToggle span {
+  display: block;
+  width: 45px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #5A3471;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menuToggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(3) {
+  width: 35px;
+}
+
+#menuToggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  width: 28px;
+}
+
+/* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+  background: #fff;
+  width: 30px;
+}
+
+/*
+   * But let's hide the middle one.
+   */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+   * Ohyeah and the last one should go the other direction
+   */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+  width: 30px;
+  background: #fff;
+}
+
+/*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+#menu {
+  position: absolute;
+  width: 320px;
+  padding: 50px 70px;
+  top: -25px;
+  left: -425px;
+  background: #65617D;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  margin: 30px 0px;
+}
+
+#menu li a {
+  color: #F7F5F4;
+  font-size: 18px;
+  display: block;
+}
+
+/*
+   * And let's slide it in from the left
+   */
+#menuToggle input:checked ~ #menu {
+  left: -25px;
+}
+
+#menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+
+/*tab styles*/
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-tabs li {
+  margin-right: 20px;
+}
+
+.nav-tabs li > a {
+  font-size: 15px;
+  font-weight: 700;
+  color: #636262 !important;
+  border-radius: 0;
+  padding: 10px 0 !important;
+  position: relative;
+}
+
+.nav-tabs li > a:hover {
+  border: 1px solid transparent;
+}
+
+.nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
+  background: none;
+  border: 1px solid transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #000000 !important;
+}
+
+.nav-tabs li.active:after {
+  height: 5px;
+  background: #FF5B4A;
+  border-radius: 20px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  content: '';
+}
+
+.search-wrap {
+  background: #fff;
+  border-radius: 22px;
+  padding: 18px 25px;
+  margin: 40px 0;
+}
+
+.search-wrap input {
+  border: none;
+  color: #B9B8B7;
+  font-size: 20px;
+  width: 91%;
+  vertical-align: middle;
+}
+
+.search-wrap .search-btn {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: url(../images/search-icon.png) no-repeat center center #65617D;
+  border-radius: 25px;
+  vertical-align: middle;
+}
+
+.lg-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000;
+  font-family: 'Nunito', sans-serif;
+}
+
+.sub-txt {
+  font-size: 18px;
+  color: #65617D;
+  position: relative;
+}
+
+.sub-txt span {
+  padding: 0 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.sub-txt span:first-child {
+  padding-left: 0;
+}
+
+.sub-txt span:last-child:after {
+  display: none;
+}
+
+.sub-txt span:after {
+  height: 17px;
+  background: #65617D;
+  content: '';
+  width: 1px;
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  right: -5px;
+}
+
+.amenities {
+  margin-top: 60px;
+}
+
+.amenities img {
+  min-height: 110px;
+  margin-bottom: 20px;
+}
+
+.amenities .amenities-name {
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+
+section {
+  padding: 30px 0;
+}
+
+.title-2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+}
+
+.title-2 a {
+  font-weight: 400;
+  color: #6C6C6C;
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.products-list {
+  margin-top: 40px;
+}
+
+.products-list .prod-wrap {
+  background: url(../images/product-bg.png) no-repeat center center;
+  min-height: 145px;
+  text-align: center;
+}
+
+.products-list .prod-wrap img {
+  min-height: 130px;
+  max-height: 130px;
+}
+
+.product-txt-wrap {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.product-txt-wrap h3.prod-name {
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 900;
+}
+
+.product-txt-wrap .price {
+  margin-bottom: 10px;
+}
+
+.product-txt-wrap .price .strike-price {
+  font-size: 19px;
+  font-style: italic;
+  color: #A0A0A0;
+  font-weight: 400;
+  margin-right: 10px;
+  text-decoration: line-through;
+}
+
+.product-txt-wrap .price span {
+  font-size: 19px;
+  font-weight: 700;
+  color: #FF6347;
+}
+
+.product-txt-wrap .prod-desc {
+  font-size: 17px;
+  color: #414140;
+}
+
+/*owl carousel*/
+.owl-carousel .owl-item img {
+  width: auto;
+  display: inline;
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-dots {
+  position: absolute;
+  top: -80px;
+  right: 0;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 26px;
+  height: 2px;
+  border-radius: 11px;
+  background: #E6E6E6;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #FF6347;
+}
+
+.services-list {
+  margin-top: 30px;
+}
+
+.services-list li {
+  height: 300px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.services-list li:nth-child(even) {
+  background: #FAFAFA;
+  border-right: 1px solid #D1CCCC;
+}
+
+.services-list li:nth-child(odd) {
+  border-right: 1px solid #D1CCCC;
+}
+
+.services-list li:nth-child(1), .services-list li:nth-child(2), .services-list li:nth-child(3) {
+  border-bottom: 1px solid #D1CCCC;
+}
+
+.services-list li:nth-child(3), .services-list li:nth-child(6) {
+  border-right: none;
+}
+
+.services-list li img {
+  min-height: 146px;
+  margin-bottom: 40px;
+}
+
+.services-list li .services-txt {
+  font-size: 20px;
+  font-weight: 700;
+  color: #414140;
+}
+
+.label-list {
+  margin: 60px 0;
+}
+
+.label-list a {
+  margin-bottom: 20px;
+  display: inline-block;
+  border-radius: 39px;
+  border: 1px solid #C3C3C3;
+  padding: 10px 20px;
+  color: #000000;
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  margin-right: 10px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.label-list a:hover, .label-list a:focus, .label-list a.active {
+  background: #F7F5F4;
+}
+
+.label-list .more-btn, .label-list .more-btn:hover, .label-list .more-btn:focus {
+  background: #65617D;
+  color: #fff;
+}
+
+footer {
+  background: #65617D;
+  padding: 50px 0 30px;
+}
+
+/*@desktop*/
+@media (min-width: 768px) {
+  .top-wrapper {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#f7f5f4), color-stop(#f7f5f4), color-stop(#f7f5f4), color-stop(#f7f5f4), color-stop(#f7f5f4), color-stop(#faeae2), color-stop(#fcded1), color-stop(#fed3c0), color-stop(#ffb99d), color-stop(#ff9d7d), color-stop(#ff7e62), to(#ff5b4a));
+    background-image: linear-gradient(to right bottom, #f7f5f4, #f7f5f4, #f7f5f4, #f7f5f4, #f7f5f4, #faeae2, #fcded1, #fed3c0, #ffb99d, #ff9d7d, #ff7e62, #ff5b4a);
+    min-height: 768px;
+  }
+  #menu {
+    width: 400px;
+  }
+  .navbar {
+    margin-bottom: 30px;
+  }
+  .navbar-nav li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #18131D;
+    font-weight: 700;
+  }
+  .nav > li > a:focus, .nav > li > a:hover {
+    background: none;
+  }
+  .top-btn {
+    border: 2px solid #3E3EFF;
+    padding: 13px 18px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    background: none;
+    float: right;
+    margin-left: 40px;
+    margin-top: -5px;
+  }
+  .navbar-collapse {
+    padding-right: 0;
+    padding: 20px 0;
+  }
+  .nav > li > a {
+    padding: 10px 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
