@@ -6,20 +6,20 @@ $(document).ready(function(){
  
         responsive:{
             0:{
-                items:1,
+                items:2,
                 nav:false,
-                dot:false
+                dots:false
             },
             600:{
                 items:2,
                 nav:false,
-                dot:false
+                dots:false
             },
             1000:{
                 items:4,
                 nav:false,
                 loop:false,
-                dot:false
+                dots:true
             }
         }
     });
