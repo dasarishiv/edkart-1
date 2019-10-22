@@ -8,7 +8,11 @@ $(document).ready(function(){
             0:{
                 items:2,
                 nav:false,
-                dots:false
+                dots:false,
+                autoplay:true,
+                autoplayTimeout:3000
+
+
             },
             600:{
                 items:2,
