@@ -39,12 +39,13 @@ ul{
 }
 .navbar-brand{
     height: auto;
-    padding: 0
+    padding: 0;
+    width:130px
 }
   .navbar-brand>img {
     height: 100%;
-    padding:15px 30px;
-    width: auto;
+    padding:20px 10px;
+    width: 100%;
   }
 
 
@@ -218,16 +219,20 @@ width: 35px;
 }
 
 .top-btn{
-    border:2px solid #3E3EFF;
-    padding: 7px 18px;
+   // border:2px solid #3E3EFF;
+    padding: 10px 18px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     color: #000;
     font-weight: 700;
     background: none;
     float: right;
-    margin-left: 40px;
-    margin-top: 1px;
+    margin-top: 23px;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        color: #000;
+    }
 
 }
 /*tab styles*/
@@ -472,7 +477,7 @@ section{
             display: block;
         }
         .services-txt{
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 700;
             color: #414140;
             display: block;
@@ -629,7 +634,12 @@ section{
          
     }
     #menu{width: 400px;}
-
+    .navbar-brand{
+        width: auto;
+    }
+    .navbar-brand>img {
+        padding: 15px 30px;
+    }
     .navbar{
         margin-bottom: 30px;
     }
@@ -644,6 +654,11 @@ section{
     }
     .nav-tabs li > a{
         font-size: 15px;
+    }
+    .top-btn{
+        margin-left: 40px;
+        font-size: 14px;
+        margin-top: 1px;
     }
     .banner-image{
         text-align: right; 
@@ -735,7 +750,9 @@ section{
         .fb-txt{
           margin-top: 0;
       }
-
+      .services-txt{
+          font-size: 20px;
+      }
       .copy-right{
           overflow: hidden;
         .footer-img-wrap{
@@ -755,3 +772,93 @@ section{
         max-width: 100%;
     }
 }
+
+ 
+ 
+.anim-btn:before, .anim-btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #252525;
+  }
+  .anim-btn:before {
+    top: 0;
+  }
+  .anim-btn:after {
+    bottom: 0;
+  }
+  .anim-btn:hover > * > *:before, .anim-btn:hover > * > *:after {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .anim-btn:hover > * > * > *:before, .anim-btn:hover > * > * > *:after {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .anim-btn > *:before, .anim-btn > *:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #252525;
+  }
+  .anim-btn > *:before {
+    left: 0;
+  }
+  .anim-btn > *:after {
+    right: 0;
+  }
+  .anim-btn > * > *:before, .anim-btn > * > *:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 9;
+    height: 2px;
+    width: 100%;
+    background-color: #FF6347;
+  }
+  .anim-btn > * > *:before {
+    top: 0;
+    -webkit-transform: translate3d(-105%, 0, 0);
+            transform: translate3d(-105%, 0, 0);
+    transition: -webkit-transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .anim-btn > * > *:after {
+    bottom: 0;
+    -webkit-transform: translate3d(105%, 0, 0);
+            transform: translate3d(105%, 0, 0);
+    transition: -webkit-transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .anim-btn > * > * > *:before, .anim-btn > * > * > *:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    height: 100%;
+    width: 2px;
+    background-color: #FF6347;
+  }
+  .anim-btn > * > * > *:before {
+    left: 0;
+    -webkit-transform: translate3d(0, 105%, 0);
+            transform: translate3d(0, 105%, 0);
+    transition: -webkit-transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .anim-btn > * > * > *:after {
+    right: 0;
+    -webkit-transform: translate3d(0, -105%, 0);
+            transform: translate3d(0, -105%, 0);
+    transition: -webkit-transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
