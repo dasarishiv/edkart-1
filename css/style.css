@@ -32,6 +32,10 @@ ul {
   text-align: center;
 }
 
+.top-wrapper .banner-image img {
+  width: 100%;
+}
+
 .top-wrapper .banner-tabpanel {
   margin-top: 30px;
 }
@@ -242,7 +246,7 @@ ul {
 }
 
 .nav-tabs li > a {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   color: #636262 !important;
   border-radius: 0;
@@ -352,7 +356,6 @@ ul {
 .amenities img {
   margin-bottom: 20px;
   width: 100%;
-  min-height: 69px;
 }
 
 .amenities .amenities-name {
@@ -360,6 +363,7 @@ ul {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   color: #000;
+  line-height: 16px;
 }
 
 section {
@@ -386,7 +390,6 @@ section {
 }
 
 .products-list .prod-wrap {
-  background: url(../images/product-bg.png) no-repeat center center;
   min-height: 145px;
   text-align: center;
   display: block;
@@ -638,6 +641,9 @@ footer .copy-right .footer-img-wrap {
   .nav > li > a {
     padding: 10px 20px;
   }
+  .nav-tabs li > a {
+    font-size: 15px;
+  }
   .banner-image {
     text-align: right;
   }
@@ -693,6 +699,9 @@ footer .copy-right .footer-img-wrap {
     width: auto;
     max-width: inherit;
     margin-bottom: 40px;
+  }
+  .prod-wrap {
+    background: url(../images/product-bg.png) no-repeat center center;
   }
   footer div {
     text-align: left;

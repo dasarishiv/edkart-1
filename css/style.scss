@@ -29,6 +29,9 @@ ul{
     padding: 0px 0 30px;
     .banner-image{
         text-align: center;
+        img{
+            width: 100%;
+        }
     }
     .banner-tabpanel{
         margin-top: 30px;
@@ -235,7 +238,7 @@ width: 35px;
         margin-right: 20px;
     }
     li>a{
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 700;
         color: #636262!important;
         border-radius: 0;
@@ -346,13 +349,14 @@ width: 35px;
         
         margin-bottom: 20px;
         width: 100%;
-        min-height: 69px;
+       
     }
     .amenities-name{
         font-size: 14px;
         font-family: 'Nunito', sans-serif;
         font-weight: 600;
-        color: #000
+        color: #000;
+        line-height: 16px;
     }
 }
 section{
@@ -375,7 +379,7 @@ section{
 .products-list{
     margin-top: 40px;
     .prod-wrap{
-        background: url(../images/product-bg.png) no-repeat center center;  
+       // background: url(../images/product-bg.png) no-repeat center center;  
         min-height: 145px;
         text-align: center;
         display: block;
@@ -638,7 +642,9 @@ section{
     .nav>li>a{
         padding: 10px 20px
     }
-
+    .nav-tabs li > a{
+        font-size: 15px;
+    }
     .banner-image{
         text-align: right; 
     }
@@ -718,7 +724,9 @@ section{
 
       
     }
-
+    .prod-wrap{
+        background: url(../images/product-bg.png) no-repeat center center;  
+    }
     footer{
         div{
             text-align: left;
