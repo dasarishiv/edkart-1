@@ -629,8 +629,16 @@ section{
             font-size: 14px;
             color: #000;
             margin: 0 3px;
+            transition: 0.4s all;
             &.active{
                 color: #FF6347;
+            }
+
+            &:hover,&:focus{
+                color: #FF6347;
+                background: none;
+                border: 1px solid #707070;
+
             }
         }
          span{

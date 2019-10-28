@@ -634,10 +634,18 @@ section {
   font-size: 14px;
   color: #000;
   margin: 0 3px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
 }
 
 .pagination li a.active {
   color: #FF6347;
+}
+
+.pagination li a:hover, .pagination li a:focus {
+  color: #FF6347;
+  background: none;
+  border: 1px solid #707070;
 }
 
 .pagination li span {
