@@ -355,7 +355,7 @@ width: 35px;
     img{
         
         margin-bottom: 20px;
-        width: 100%;
+         
        
     }
     .amenities-name{
@@ -364,6 +364,13 @@ width: 35px;
         font-weight: 600;
         color: #000;
         line-height: 16px;
+    }
+
+    .mobile{
+        display: inline-block;
+    }
+    .desktop{
+        display: none;
     }
 }
 section{
@@ -471,9 +478,9 @@ section{
         padding-top: 40px;       
        
         img{
-            min-height:146px;
+             
             margin-bottom: 20px;
-            max-width:150px;
+             
         }
         a{
             display: block;
@@ -983,6 +990,13 @@ section{
         .amenities-name{
             font-size: 17px;
         }
+
+        .mobile{
+            display: none;
+        }
+        .desktop{
+            display: inline-block;
+        }
     }
 
     .title-2{
@@ -1015,9 +1029,8 @@ section{
         }
 
         img{
-            width:auto;
-            max-width: inherit;
-            margin-bottom: 40px;
+            
+            margin-bottom: 25px;
         }
        }
 

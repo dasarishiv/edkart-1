@@ -360,7 +360,6 @@ ul {
 
 .amenities img {
   margin-bottom: 20px;
-  width: 100%;
 }
 
 .amenities .amenities-name {
@@ -369,6 +368,14 @@ ul {
   font-weight: 600;
   color: #000;
   line-height: 16px;
+}
+
+.amenities .mobile {
+  display: inline-block;
+}
+
+.amenities .desktop {
+  display: none;
 }
 
 section {
@@ -479,9 +486,7 @@ section {
 }
 
 .services-list li img {
-  min-height: 146px;
   margin-bottom: 20px;
-  max-width: 150px;
 }
 
 .services-list li a {
@@ -964,6 +969,12 @@ footer .copy-right .footer-img-wrap {
   .amenities .amenities-name {
     font-size: 17px;
   }
+  .amenities .mobile {
+    display: none;
+  }
+  .amenities .desktop {
+    display: inline-block;
+  }
   .title-2 {
     font-size: 28px;
   }
@@ -987,9 +998,7 @@ footer .copy-right .footer-img-wrap {
     border-right: none;
   }
   .services-list li img {
-    width: auto;
-    max-width: inherit;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
   .prod-wrap {
     background: url(../images/product-bg.png) no-repeat center center;
