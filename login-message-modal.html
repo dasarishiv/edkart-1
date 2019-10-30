@@ -326,30 +326,13 @@
                 <div class="modal-content">
                     <div class="login-wrap">
                         <div class="row">
-                            <div class="col-md-4">
-                                <div class="login-img-wrap">
-                                    <img src="images/login-img.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="login-title">Login</div>
-                                <p>Provide your mobile number enable us to merchandise the school products</p>
-                                <input type="text" placeholder="Enter your mobile number" class="login-field">
+                             <div class="col-m-12">
+                                 <div class="login-msg-wrap text-center">
+                                        <img src="images/success-icon.png" alt="">
 
-                                <div class="login-btn-wrap">
-                                    <span>You will be sent an OTP for verification</span>
-                                    <a href="#" class="secondary-btn pull-right">Sign In</a>
-
-                                </div>
-
-                                <div>
-                                    <a href="#" class="link-blue">Forgot password</a>
-                                </div>
-
-                                <div class="note-txt">
-                                    Once verified & logged In, you will see merchandise items for the school mapped to your Mobile no.
-                                </div>
-                            </div>
+                                        <div class="login-success-msg">Successfully Verified</div>
+                                 </div>
+                             </div>
                         </div>
                     </div>
                 </div>
@@ -362,5 +345,12 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="js/owl.carousel.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+        
+            $(document).ready(function(){
+
+                $('#login-modal').modal ('show');
+            });
+        </script>
     </body>
 </html> 
