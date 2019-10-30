@@ -794,6 +794,10 @@ section {
   margin-top: 15px;
 }
 
+.fgt-pwd-link {
+  text-align: center;
+}
+
 footer {
   background: #D0CFD8;
   padding: 50px 0 20px;
@@ -1040,6 +1044,9 @@ footer .copy-right .footer-img-wrap {
     margin-left: 75px;
   }
   .otp-wrap {
+    text-align: left;
+  }
+  .fgt-pwd-link {
     text-align: left;
   }
 }
