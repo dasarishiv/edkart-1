@@ -571,6 +571,7 @@ section{
             span{
 
                 display: block;
+                text-align: center;
             }
 
             img{
@@ -1052,7 +1053,9 @@ section{
                 margin-bottom: 0;
             }
 
-           
+           span{
+               text-align: left;
+           }
         }
     }
 }

@@ -580,6 +580,7 @@ section {
 
 .search-list-wrap .search-list li span {
   display: block;
+  text-align: center;
 }
 
 .search-list-wrap .search-list li img {
@@ -1006,6 +1007,9 @@ footer .copy-right .footer-img-wrap {
   }
   .search-list-wrap .search-list li img {
     margin-bottom: 0;
+  }
+  .search-list-wrap .search-list li span {
+    text-align: left;
   }
   .primary-modal .modal-content {
     width: 700px;
