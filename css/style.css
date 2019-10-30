@@ -715,6 +715,10 @@ section {
   margin-bottom: 15px;
 }
 
+.login-wrap .login-btn-wrap .login-btn {
+  display: block;
+}
+
 .login-wrap .link-blue {
   font-size: 13px;
   color: #3E3EFF;
