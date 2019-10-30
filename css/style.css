@@ -487,6 +487,7 @@ section {
 
 .services-list li img {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .services-list li a {
@@ -999,6 +1000,7 @@ footer .copy-right .footer-img-wrap {
   }
   .services-list li img {
     margin-bottom: 25px;
+    width: auto;
   }
   .prod-wrap {
     background: url(../images/product-bg.png) no-repeat center center;
