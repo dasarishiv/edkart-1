@@ -302,12 +302,19 @@ width: 35px;
         display: inline-block;
         width: 30px;
         height: 30px;
-        background: url(../images/search-icon.png) no-repeat center center #65617D;
+        background:#65617D;
+        //background: url(../images/search-icon.png) no-repeat center center #65617D;
         border-radius: 25px;
         vertical-align: middle;
         position: absolute;
         top:11px;
-        right:20px
+        right:20px;
+       text-align: center;
+       padding:4px;
+        img{
+            width:16px;
+            height: 16px;
+        }
     }
 }
  
@@ -687,6 +694,9 @@ section{
     .login-img-wrap {
          margin: 0 auto 20px;
          width: 190px;
+         img{
+             width: 100%;
+         }
     }   
     .login-title{
         font-size: 18px;
@@ -852,28 +862,31 @@ section{
         }
 
         .facebook{
-            background-image: url(../images/facebook.png) ;
+            background-image: url(../images/facebook.svg) ;
         }
         .whatsapp{
-            background-image: url(../images/whatsapp.png);
+            background-image: url(../images/whatsapp.svg);
         }
         .youtube{
-            background-image: url(../images/youtube.png);
+            background-image: url(../images/youtube.svg);
         }
         .googleplus{
-            background-image: url(../images/google-plus.png);
+            background-image: url(../images/google-plus.svg);
         }
         .twitter{
-            background-image: url(../images/twitter.png);
+            background-image: url(../images/twitter.svg);
         }
         .f-like{
-            background-image: url(../images/f-like.png);
+            background-image: url(../images/f-like.svg);
             width: 71px;
             margin-left: 20px;
+            background-size:contain;
         }
         .f-share{
-            background-image: url(../images/f-share.png);
+            background-image: url(../images/f-share.svg);
             width: 76px;
+            background-size:contain;
+
         }
         .fb-txt{
             font-size: 13px;
@@ -894,12 +907,36 @@ section{
         color: #65617D;
         font-weight: 500;
         padding:20px 0;
+        position: relative;
 
         .footer-img-wrap{
             display: block;
             text-align: center;
             margin-top: 20px;
+            span{
+                width:60px;
+            height: 40px;
+            display: inline-block;
+            }
         }
+
+        .ae{
+            background: url(../images/ae.svg) no-repeat center center/contain;            
+
+        }
+        .master{
+            background: url(../images/master.svg) no-repeat center center/contain;            
+
+        }
+        .visa{
+            background: url(../images/visa.svg) no-repeat center center/contain;            
+
+        }
+        .paypal{
+            background: url(../images/paypal.svg) no-repeat center center/contain;            
+
+        }
+
      }
   }
 
@@ -1039,7 +1076,7 @@ section{
       
     }
     .prod-wrap{
-        background: url(../images/product-bg.png) no-repeat center center;  
+        background: url(../images/product-bg.svg) no-repeat center center /contain;  
     }
     footer{
         div{
@@ -1055,9 +1092,9 @@ section{
       .copy-right{
           overflow: hidden;
         .footer-img-wrap{
-            float: right;
-            text-align: center;
-            margin-top: -10px;
+            position: absolute;
+            right: 0;
+            top: -10px;
         }
       }
     }
@@ -1077,6 +1114,7 @@ section{
         li{
             img{
                 margin-bottom: 0;
+                width: 100%;
             }
 
            span{
@@ -1099,6 +1137,9 @@ section{
 
 
         margin-top: 35px;
+        img{
+            width: 100%;
+        }
     }
 
     .login-btn-wrap{

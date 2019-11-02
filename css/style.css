@@ -308,12 +308,19 @@ ul {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: url(../images/search-icon.png) no-repeat center center #65617D;
+  background: #65617D;
   border-radius: 25px;
   vertical-align: middle;
   position: absolute;
   top: 11px;
   right: 20px;
+  text-align: center;
+  padding: 4px;
+}
+
+.search-wrap .search-btn img {
+  width: 16px;
+  height: 16px;
 }
 
 .lg-title {
@@ -685,6 +692,10 @@ section {
   width: 190px;
 }
 
+.login-wrap .login-img-wrap img {
+  width: 100%;
+}
+
 .login-wrap .login-title {
   font-size: 18px;
   color: #000;
@@ -848,34 +859,36 @@ footer .social-links a {
 }
 
 footer .social-links .facebook {
-  background-image: url(../images/facebook.png);
+  background-image: url(../images/facebook.svg);
 }
 
 footer .social-links .whatsapp {
-  background-image: url(../images/whatsapp.png);
+  background-image: url(../images/whatsapp.svg);
 }
 
 footer .social-links .youtube {
-  background-image: url(../images/youtube.png);
+  background-image: url(../images/youtube.svg);
 }
 
 footer .social-links .googleplus {
-  background-image: url(../images/google-plus.png);
+  background-image: url(../images/google-plus.svg);
 }
 
 footer .social-links .twitter {
-  background-image: url(../images/twitter.png);
+  background-image: url(../images/twitter.svg);
 }
 
 footer .social-links .f-like {
-  background-image: url(../images/f-like.png);
+  background-image: url(../images/f-like.svg);
   width: 71px;
   margin-left: 20px;
+  background-size: contain;
 }
 
 footer .social-links .f-share {
-  background-image: url(../images/f-share.png);
+  background-image: url(../images/f-share.svg);
   width: 76px;
+  background-size: contain;
 }
 
 footer .social-links .fb-txt {
@@ -894,12 +907,35 @@ footer .copy-right {
   color: #65617D;
   font-weight: 500;
   padding: 20px 0;
+  position: relative;
 }
 
 footer .copy-right .footer-img-wrap {
   display: block;
   text-align: center;
   margin-top: 20px;
+}
+
+footer .copy-right .footer-img-wrap span {
+  width: 60px;
+  height: 40px;
+  display: inline-block;
+}
+
+footer .copy-right .ae {
+  background: url(../images/ae.svg) no-repeat center center/contain;
+}
+
+footer .copy-right .master {
+  background: url(../images/master.svg) no-repeat center center/contain;
+}
+
+footer .copy-right .visa {
+  background: url(../images/visa.svg) no-repeat center center/contain;
+}
+
+footer .copy-right .paypal {
+  background: url(../images/paypal.svg) no-repeat center center/contain;
 }
 
 /*@desktop*/
@@ -1003,7 +1039,7 @@ footer .copy-right .footer-img-wrap {
     width: auto;
   }
   .prod-wrap {
-    background: url(../images/product-bg.png) no-repeat center center;
+    background: url(../images/product-bg.svg) no-repeat center center/contain;
   }
   footer div {
     text-align: left;
@@ -1018,9 +1054,9 @@ footer .copy-right .footer-img-wrap {
     overflow: hidden;
   }
   footer .copy-right .footer-img-wrap {
-    float: right;
-    text-align: center;
-    margin-top: -10px;
+    position: absolute;
+    right: 0;
+    top: -10px;
   }
   .main-content {
     width: 85%;
@@ -1031,6 +1067,7 @@ footer .copy-right .footer-img-wrap {
   }
   .search-list-wrap .search-list li img {
     margin-bottom: 0;
+    width: 100%;
   }
   .search-list-wrap .search-list li span {
     text-align: left;
@@ -1040,6 +1077,9 @@ footer .copy-right .footer-img-wrap {
   }
   .login-wrap .login-img-wrap {
     margin-top: 35px;
+  }
+  .login-wrap .login-img-wrap img {
+    width: 100%;
   }
   .login-wrap .login-btn-wrap {
     text-align: left;
