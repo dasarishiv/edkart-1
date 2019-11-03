@@ -859,7 +859,7 @@ section{
 
 .dropdown-menu{
     width:342px;
-    left:108px;
+    left:0px;
     padding:0 30px 30px;
     border-radius: 0;
     border: 1px solid #D6D6D6;
@@ -1444,7 +1444,9 @@ padding-right: 20px;
         margin: 0;
     }
 }
-
+.dropdown-menu{
+    left:108px
+}
 }
 
 
