@@ -824,18 +824,18 @@ section{
 }
 
 .user-info{
-    display: inline-block;
+    display: block;
     margin:20px 0;
     background: url(../images/down-arrow.svg) no-repeat right 85%;
     >span{
         display: inline-block;
         vertical-align: middle;
-        margin-right: 30px;
+        margin-right: 10px;
     }
 
     .avatar{
-        width:75px;
-        height:75px;
+        width:60px;
+        height:60px;
         
         img{
             width:100%
@@ -898,23 +898,26 @@ section{
     border-radius: 28px;
     padding: 20px 20px 0;
     margin-bottom: 30px;
+    text-align: center;
+    width: 99%;
     .top-section{
-        display: table;
+        display: block;
         width: 100%;
 
         >div{
-            display: table-cell;
+            display: block;
             vertical-align: middle;
-            padding-right: 20px;
+            padding-right: 0px;
         }
 
         .code{
             color: #F75842;
             font-size: 18px;
             display: block;
-            text-align: right;
+            text-align: center;
             font-family: Nunito;
             font-weight:600;
+            margin: 15px 0;
         }
 
         .school-name{
@@ -1384,9 +1387,64 @@ section{
 }
 
 
+.user-info{
+
+display: inline-block;
+padding-right: 20px;
+.avatar{
+    width: 75px;
+    height: 75px;
+    margin-right: 30px;
+}
+
+}
 
 
+.school-list-item{
+    
+    border-radius: 28px;
+    padding: 20px 20px 0;
+    margin-bottom: 0px;
+    width: 100%;
+    .top-section{
+        display: table;
+        width: 100%;
 
+        >div{
+            display: table-cell;
+            vertical-align: middle;
+            padding-right: 20px;
+        }
+
+         
+    }
+
+    .btm-section{
+
+        padding: 20px 0 10px;
+    }
+
+    .student-name{
+        color: #000000;
+        font-size: 24px;
+        margin: 20px 0 0;
+        font-family: Nunito;
+        font-weight: 600;
+    }
+
+    .grade{
+        font-size: 14px;
+        color: #8D8D8D;
+        font-weight: 500;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .code{
+        text-align: right;
+        margin: 0;
+    }
+}
 
 }
 
