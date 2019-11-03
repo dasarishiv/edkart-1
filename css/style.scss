@@ -692,17 +692,13 @@ section{
 
 .login-wrap{
     .login-img-wrap {
-         margin: 0 auto 20px;
-         width: 190px;
-         img{
-             width: 100%;
-         }
+        
+          
     }   
     .login-title{
         font-size: 18px;
         color: #000;
-        text-transform: uppercase;
-        font-weight: bold;
+         font-weight: bold;
         margin-bottom: 10px;
     }
 
@@ -745,12 +741,14 @@ section{
         color: #3E3EFF;
         text-decoration: underline;
         font-weight: 700;
+        float: right;
     }
 
     .note-txt{
         font-size: 11px;
         color: #5F5B5B;
         margin-top: 30px;
+         
     }
 .otp-fields-wrap{
     margin-top: 20px;
@@ -759,9 +757,8 @@ section{
         width: 50px;
         height: 50px;
         display: inline-block;
-        margin-right: 10px;
-        border: 2px solid #FF5B4A;
-        padding: 10px;
+        margin-right: 20px;
+    
     }
 }
 
@@ -773,6 +770,7 @@ section{
     font-weight: 600;
     background: #FF5B4A;
     border-radius: 8px;
+    text-align: center;
 }
 
 .pt-15{
@@ -815,7 +813,217 @@ section{
 
 .fgt-pwd-link{
     text-align: center;
+    span{
+        font-size: 12px;
+    }
 }
+
+.user-info{
+    display: inline-block;
+    margin:20px 0;
+    background: url(../images/down-arrow.svg) no-repeat right 85%;
+    >span{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 30px;
+    }
+
+    .avatar{
+        width:75px;
+        height:75px;
+        
+        img{
+            width:100%
+        }
+    }
+
+    .welcome-txt{
+        color: #FF5B4A;
+        font-size: 25px;
+        font-family: Nunito;
+        display: block;
+    }
+
+    .avatar-name{
+        font-size: 28px;
+        color:#000;
+        font-family: Nunito;
+    }
+}
+
+
+.dropdown-menu{
+    width:342px;
+    left:108px;
+    padding:0 30px 30px;
+    border-radius: 0;
+    border: 1px solid #D6D6D6;
+    top:90%;
+    .dropdown-item{
+        display: block;
+        margin-top: 20px;
+        color: #65617D;
+        font-size: 22px;
+        font-weight: 500;
+        padding:10px 50px;
+    }
+
+    .profile{
+        background: url(../images/profile-details.svg) no-repeat left center;
+    }
+    .orders{
+        background: url(../images//order-details.svg) no-repeat left center;
+    }
+    .address{
+        background: url(../images/address.svg) no-repeat left center;
+    }
+    .logout{
+        background: url(../images/logout.svg) no-repeat left center;
+    }
+}
+
+
+.inner-content-wrap{
+  
+    margin: 0 auto;
+}
+
+.school-list-item{
+    border:1px solid #D6D6D6;
+    border-radius: 28px;
+    padding: 20px 20px 0;
+    margin-bottom: 30px;
+    .top-section{
+        display: table;
+        width: 100%;
+
+        >div{
+            display: table-cell;
+            vertical-align: middle;
+            padding-right: 20px;
+        }
+
+        .code{
+            color: #F75842;
+            font-size: 18px;
+            display: block;
+            text-align: right;
+            font-family: Nunito;
+            font-weight:600;
+        }
+
+        .school-name{
+            font-size: 24px;
+            color: #18131D;
+            font-weight: 600;
+            display: block;
+            font-family: Nunito;
+        }
+
+        .address-txt{
+            font-size: 14px;
+            color: #979797;
+
+        }
+    }
+
+    .btm-section{
+
+        padding: 20px 0 10px;
+    }
+
+    .student-name{
+        color: #000000;
+        font-size: 24px;
+        margin: 20px 0 0;
+        font-family: Nunito;
+        font-weight: 600;
+    }
+
+    .grade{
+        font-size: 14px;
+        color: #8D8D8D;
+        font-weight: 500;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.school-list-carousel {
+    margin:30px 0 100px;
+
+    .owl-dots{
+        top: auto;
+        bottom: -30px;
+    }
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+
+.form-control{
+    border: 1px solid #8D8D8D;
+    border-radius: 5px;
+    color: #B9B8B7;
+    font-size: 14px;
+    padding:15px 10px;
+    height: auto;
+}
+
+.signup-link{
+    font-size: 18px;
+    font-weight: 700;
+    color: #FF5B4A;
+    margin: 20px 0;
+}
+
+.simple-text{
+    font-size: 16px;
+    color: #5F5B5B;
+}
+
+.strong{
+    font-weight: 700;
+}
+.login-wrap{
+    padding: 40px 0;
+}
+
+.mt-40{
+    margin-top: 40px;
+}
+
+.terms-condition{
+    margin: 30px 0;
+    li{
+        text-align: left;
+        margin-bottom: 10px;
+        color: #5F5B5B;
+    }
+}
+.resend-otp{
+    font-size: 14px;
+    color: #3E3EFF;
+    text-decoration: underline;
+    font-weight: 700;
+    padding-top: 15px;
+    margin-right: 95px;
+}
+.inline-block {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -940,7 +1148,9 @@ section{
      }
   }
 
-
+.full-width{
+    width: 100%;
+}
 
 
 
@@ -1137,9 +1347,7 @@ section{
 
 
         margin-top: 35px;
-        img{
-            width: 100%;
-        }
+        
     }
 
     .login-btn-wrap{
@@ -1149,13 +1357,7 @@ section{
             vertical-align: middle;
         }
 
-        .login-btn{
-            margin-left: 115px;
-        }
-
-        .verify-btn{
-            margin-left: 75px;
-        }
+        
     }
 }
 
@@ -1266,3 +1468,74 @@ section{
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
+
+//   custom check box styles
+
+/* Customize the label (the container) */
+.custom-check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+     font-weight: 700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .custom-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #cdcdcd;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .custom-check:hover input ~ .checkmark {
+    background-color: #cdcdcd;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .custom-check input:checked ~ .checkmark {
+    background-color: #FF5B4A;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .custom-check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .custom-check .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+   
+ $('.products-list').owlCarousel({
         loop:true,
         margin:10,
         responsiveClass:true,
@@ -28,10 +29,32 @@ $(document).ready(function(){
         }
     });
 
+    $('.school-list-carousel').owlCarousel({
+        loop:true,
+        margin:40,
+        responsiveClass:true,
+ 
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                dots:false,
+                autoplay:true,
+                autoplayTimeout:3000
 
-    $('#search').keyup(function(){
-        var sVal=$(this).val();
 
-        $('.alphabets').val(sVal)
+            },
+            600:{
+                items:2,
+                nav:false,
+                dots:false
+            },
+            1000:{
+                items:2,
+                nav:false,
+                loop:false,
+                dots:true
+            }
+        }
     });
 });

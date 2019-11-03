@@ -687,19 +687,9 @@ section {
   padding: 60px 40px;
 }
 
-.login-wrap .login-img-wrap {
-  margin: 0 auto 20px;
-  width: 190px;
-}
-
-.login-wrap .login-img-wrap img {
-  width: 100%;
-}
-
 .login-wrap .login-title {
   font-size: 18px;
   color: #000;
-  text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -741,6 +731,7 @@ section {
   color: #3E3EFF;
   text-decoration: underline;
   font-weight: 700;
+  float: right;
 }
 
 .login-wrap .note-txt {
@@ -757,9 +748,7 @@ section {
   width: 50px;
   height: 50px;
   display: inline-block;
-  margin-right: 10px;
-  border: 2px solid #FF5B4A;
-  padding: 10px;
+  margin-right: 20px;
 }
 
 .secondary-btn, .secondary-btn:hover, .secondary-btn:focus {
@@ -770,6 +759,7 @@ section {
   font-weight: 600;
   background: #FF5B4A;
   border-radius: 8px;
+  text-align: center;
 }
 
 .pt-15 {
@@ -813,6 +803,211 @@ section {
 
 .fgt-pwd-link {
   text-align: center;
+}
+
+.fgt-pwd-link span {
+  font-size: 12px;
+}
+
+.user-info {
+  display: inline-block;
+  margin: 20px 0;
+  background: url(../images/down-arrow.svg) no-repeat right 85%;
+}
+
+.user-info > span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+
+.user-info .avatar {
+  width: 75px;
+  height: 75px;
+}
+
+.user-info .avatar img {
+  width: 100%;
+}
+
+.user-info .welcome-txt {
+  color: #FF5B4A;
+  font-size: 25px;
+  font-family: Nunito;
+  display: block;
+}
+
+.user-info .avatar-name {
+  font-size: 28px;
+  color: #000;
+  font-family: Nunito;
+}
+
+.dropdown-menu {
+  width: 342px;
+  left: 108px;
+  padding: 0 30px 30px;
+  border-radius: 0;
+  border: 1px solid #D6D6D6;
+  top: 90%;
+}
+
+.dropdown-menu .dropdown-item {
+  display: block;
+  margin-top: 20px;
+  color: #65617D;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 10px 50px;
+}
+
+.dropdown-menu .profile {
+  background: url(../images/profile-details.svg) no-repeat left center;
+}
+
+.dropdown-menu .orders {
+  background: url(../images//order-details.svg) no-repeat left center;
+}
+
+.dropdown-menu .address {
+  background: url(../images/address.svg) no-repeat left center;
+}
+
+.dropdown-menu .logout {
+  background: url(../images/logout.svg) no-repeat left center;
+}
+
+.inner-content-wrap {
+  margin: 0 auto;
+}
+
+.school-list-item {
+  border: 1px solid #D6D6D6;
+  border-radius: 28px;
+  padding: 20px 20px 0;
+  margin-bottom: 30px;
+}
+
+.school-list-item .top-section {
+  display: table;
+  width: 100%;
+}
+
+.school-list-item .top-section > div {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.school-list-item .top-section .code {
+  color: #F75842;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  font-family: Nunito;
+  font-weight: 600;
+}
+
+.school-list-item .top-section .school-name {
+  font-size: 24px;
+  color: #18131D;
+  font-weight: 600;
+  display: block;
+  font-family: Nunito;
+}
+
+.school-list-item .top-section .address-txt {
+  font-size: 14px;
+  color: #979797;
+}
+
+.school-list-item .btm-section {
+  padding: 20px 0 10px;
+}
+
+.school-list-item .student-name {
+  color: #000000;
+  font-size: 24px;
+  margin: 20px 0 0;
+  font-family: Nunito;
+  font-weight: 600;
+}
+
+.school-list-item .grade {
+  font-size: 14px;
+  color: #8D8D8D;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.school-list-carousel {
+  margin: 30px 0 100px;
+}
+
+.school-list-carousel .owl-dots {
+  top: auto;
+  bottom: -30px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.form-control {
+  border: 1px solid #8D8D8D;
+  border-radius: 5px;
+  color: #B9B8B7;
+  font-size: 14px;
+  padding: 15px 10px;
+  height: auto;
+}
+
+.signup-link {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FF5B4A;
+  margin: 20px 0;
+}
+
+.simple-text {
+  font-size: 16px;
+  color: #5F5B5B;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.login-wrap {
+  padding: 40px 0;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.terms-condition {
+  margin: 30px 0;
+}
+
+.terms-condition li {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #5F5B5B;
+}
+
+.resend-otp {
+  font-size: 14px;
+  color: #3E3EFF;
+  text-decoration: underline;
+  font-weight: 700;
+  padding-top: 15px;
+  margin-right: 95px;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 footer {
@@ -936,6 +1131,10 @@ footer .copy-right .visa {
 
 footer .copy-right .paypal {
   background: url(../images/paypal.svg) no-repeat center center/contain;
+}
+
+.full-width {
+  width: 100%;
 }
 
 /*@desktop*/
@@ -1078,21 +1277,12 @@ footer .copy-right .paypal {
   .login-wrap .login-img-wrap {
     margin-top: 35px;
   }
-  .login-wrap .login-img-wrap img {
-    width: 100%;
-  }
   .login-wrap .login-btn-wrap {
     text-align: left;
   }
   .login-wrap .login-btn-wrap a, .login-wrap .login-btn-wrap span {
     display: inline-block;
     vertical-align: middle;
-  }
-  .login-wrap .login-btn-wrap .login-btn {
-    margin-left: 115px;
-  }
-  .login-wrap .login-btn-wrap .verify-btn {
-    margin-left: 75px;
   }
   .otp-wrap {
     text-align: left;
@@ -1211,5 +1401,73 @@ footer .copy-right .paypal {
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Customize the label (the container) */
+.custom-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.custom-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #cdcdcd;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-check:hover input ~ .checkmark {
+  background-color: #cdcdcd;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-check input:checked ~ .checkmark {
+  background-color: #FF5B4A;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-check .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 /*# sourceMappingURL=style.css.map */
