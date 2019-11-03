@@ -912,7 +912,7 @@ section {
   color: #F75842;
   font-size: 18px;
   display: block;
-  text-align: right;
+  text-align: center;
   font-family: Nunito;
   font-weight: 600;
   margin: 15px 0;
@@ -1350,7 +1350,7 @@ footer .copy-right .paypal {
     margin-bottom: 20px;
   }
   .school-list-item .code {
-    text-align: center;
+    text-align: right;
     margin: 0;
   }
   .dropdown-menu {
