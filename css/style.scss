@@ -689,10 +689,15 @@ section{
 }
 
 
-
+.otp-wrapper{
+    text-align: center;
+}
 .login-wrap{
     .login-img-wrap {
         
+        img{
+            width:100%
+        }
           
     }   
     .login-title{
@@ -1010,7 +1015,7 @@ section{
     text-decoration: underline;
     font-weight: 700;
     padding-top: 15px;
-    margin-right: 95px;
+ 
 }
 .inline-block {
     display: inline-block;
@@ -1347,6 +1352,9 @@ section{
 
 
         margin-top: 35px;
+        img{
+            width: auto;
+        }
         
     }
 
@@ -1367,6 +1375,18 @@ section{
 .fgt-pwd-link{
     text-align: left;
 }
+
+.otp-wrapper{
+    text-align: left;
+}
+.resend-otp{
+    margin-right: 95px;
+}
+
+
+
+
+
 
 }
 

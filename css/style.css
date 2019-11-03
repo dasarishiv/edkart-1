@@ -687,6 +687,14 @@ section {
   padding: 60px 40px;
 }
 
+.otp-wrapper {
+  text-align: center;
+}
+
+.login-wrap .login-img-wrap img {
+  width: 100%;
+}
+
 .login-wrap .login-title {
   font-size: 18px;
   color: #000;
@@ -1003,7 +1011,6 @@ section {
   text-decoration: underline;
   font-weight: 700;
   padding-top: 15px;
-  margin-right: 95px;
 }
 
 .inline-block {
@@ -1277,6 +1284,9 @@ footer .copy-right .paypal {
   .login-wrap .login-img-wrap {
     margin-top: 35px;
   }
+  .login-wrap .login-img-wrap img {
+    width: auto;
+  }
   .login-wrap .login-btn-wrap {
     text-align: left;
   }
@@ -1289,6 +1299,12 @@ footer .copy-right .paypal {
   }
   .fgt-pwd-link {
     text-align: left;
+  }
+  .otp-wrapper {
+    text-align: left;
+  }
+  .resend-otp {
+    margin-right: 95px;
   }
 }
 
