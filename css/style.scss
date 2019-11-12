@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 body{
 
     font-family: 'Roboto', sans-serif;
@@ -414,6 +415,7 @@ section{
 .product-txt-wrap{
     text-align: center;
     margin-top: 30px;
+    display: block;
     h3.prod-name{
         font-size: 19px;
         text-transform: uppercase;
@@ -1126,7 +1128,7 @@ section{
 }
 
 .top-action-items{
-    overflow: hidden;
+    
     margin-bottom: 30px;
 }
 
@@ -1157,11 +1159,138 @@ section{
 }
 
 
+.filter-dd-wrap{
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    position: relative;
+    >a{
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #000;
+        padding:5px 10px;
+        display: block;
+        font-weight: 700;
+        background: url(../images/plus-icon.svg) no-repeat 98% center;
+    }
+   
+    .dropdown-menu{
+        left:0;
+       padding:20px 0;
+        position: absolute;
+       ul{
+           padding:0 20px;
+        li{
+            a{
+            font-size: 22px;
+            color: #65617D;
+            margin-bottom: 10px;
+            font-weight: 500;
+            }
+            margin-bottom: 10px;
+        }
+    }
+        .custom-scroll{
+            height: 250px;
+            overflow-y: auto!important;
+        }
+         
+    }
+} 
+
+.products-wrap{
+    padding: 40px 0;
+}
+
+.prod-image{
+    text-align: center;
+    display: block;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    img{
+        width: 100%;
+    }
+}
+
+.like-txt{
+    font-size: 20px;
+    color: #414140;
+    font-weight: 700;
+
+    .like{
+        background: url(../images/like-default.png) no-repeat center center;
+        display: inline-block;
+        width: 20px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 10px;
+
+        &.active{
+            background: url(../images/like-active.png) no-repeat center center;
+
+        }
+    }
+}
+
+
+.mt-0{
+    margin-top: 0;
+}
+
+
+.offer-txt{
+    width: 40px;
+    height: 40px;
+    background: #FFDE26;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 8px;
+    vertical-align: middle;
+    line-height: 12px;
+    margin-left: 10px;
+}
+
+.availabilty-txt{
+    font-size: 22px;
+    font-weight: 500;
+    color: #FF5B4A;
+    margin-top: 10px;
+    text-align: center;
+    font-family: Nunito;
+}
+.no-stock{
+    color: #979797;
+}
+
+ .prod-list{
+
+    li{
+        margin-bottom: 40px;
+        height: 420px;
+    }
+ }
 
 
 
 
 
+
+
+
+
+
+
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    border-radius: 10px!important;
+    background: #FF5B4A!important;
+}
+.mCSB_scrollTools .mCSB_draggerRail{
+    background: none;
+}
 
 
 
@@ -1777,3 +1906,43 @@ margin-right: auto;
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+
+//   rating styles
+.rating { 
+    border: none;
+    text-align: center;
+    width: 153px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .rating > input { display: none; } 
+  .rating > label:before { 
+    margin: 5px;
+    font-size: 22px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+  }
+  
+  .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+  }
+  
+  .rating > label { 
+    color: #ddd; 
+   float: right; 
+  }
+  
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  
+  .rating > input:checked ~ label, /* show gold star when clicked */
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label { color: #FF6347;  } /* hover previous stars in list */
+  
+  .rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label { color: #FF6347;  } 
