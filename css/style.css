@@ -1092,6 +1092,13 @@ section {
   vertical-align: middle;
 }
 
+.back-to-link span, .back-to-link:hover span, .back-to-link:focus span {
+  font-size: 20px;
+  color: #979797;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .switch-dd {
   position: relative;
   display: inline-block;
@@ -1205,6 +1212,7 @@ section {
   width: 220px;
   height: 220px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .prod-image img {
@@ -1323,6 +1331,204 @@ section {
 
 .listview .pagination .page-item a {
   display: inline-block;
+}
+
+.prod-thumb img {
+  width: 100% !important;
+}
+
+.prod-details-wrap .product-txt-wrap {
+  text-align: left;
+}
+
+.prod-details-wrap .product-txt-wrap .rating {
+  text-align: left;
+  margin: 0;
+}
+
+.prod-details-wrap .product-txt-wrap .availabilty-txt {
+  text-align: left;
+}
+
+.prod-details-wrap .product-txt-wrap .prod-description {
+  display: block;
+}
+
+.prod-details-wrap .owl-dots {
+  position: static;
+  margin-top: 30px !important;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.prod-info-labels {
+  margin-top: 20px;
+}
+
+.prod-info-labels li {
+  margin-bottom: 10px;
+}
+
+.prod-info-labels li span {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #414140;
+  font-weight: 700;
+  width: 150px;
+  display: inline-block;
+}
+
+.pr-quantity label {
+  font-size: 20px;
+  color: #414140;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.pr-quantity .qty-num-wrap {
+  margin-bottom: 20px;
+  border: 1px solid #707070;
+  display: inline-block;
+}
+
+.pr-quantity .qty-num-wrap button, .pr-quantity .qty-num-wrap input {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background: none;
+  border: none;
+}
+
+.pr-quantity .qty-num-wrap button {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 0;
+  color: #7B7B7B;
+}
+
+.pr-quantity .qty-num-wrap input {
+  font-size: 16px;
+  font-weight: 700;
+  border-left: 1px solid #707070;
+  border-right: 1px solid #707070;
+  line-height: 32px;
+}
+
+.prod-social-links {
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  padding: 20px 0;
+  margin: 20px 0 40px;
+  color: #707070;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.prod-social-links a {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.prod-social-links a.fb {
+  background-image: url(../images/icon-fb.svg);
+}
+
+.prod-social-links a.twitter {
+  background-image: url(../images/icon-twitter.svg);
+}
+
+.prod-social-links a.pin {
+  background-image: url(../images/icon-pin.svg);
+}
+
+.prod-social-links a.whatsapp {
+  background-image: url(../images/icon-whatsapp.svg);
+}
+
+.prod-details-tab .nav-tabs {
+  font-size: 0;
+}
+
+.prod-details-tab .nav-tabs li {
+  margin-right: 0;
+}
+
+.prod-details-tab .nav-tabs li > a {
+  background: #F2F3F7;
+  font-size: 16px;
+  color: #505050;
+  padding: 15px 30px !important;
+  margin-right: 0;
+  border: 1px solid #A7A8C2;
+}
+
+.prod-details-tab .nav-tabs li.active a, .prod-details-tab .nav-tabs li.active a:hover, .prod-details-tab .nav-tabs li.active a:focus {
+  border: 1px solid transparent;
+  border-left: 1px solid #A7A8C2;
+  background: none;
+}
+
+.prod-details-tab .nav-tabs li.active:after {
+  bottom: auto;
+  top: -5px;
+  border-radius: 0;
+}
+
+.prod-details-tab .tab-content {
+  padding: 30px 0;
+}
+
+.prod-details-tab .tab-content p {
+  color: #505050;
+  font-size: 16px;
+}
+
+.prod-details-tab .tab-content .ft-list li {
+  font-size: 16px;
+  color: #505050;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.prod-details-tab .tab-content .ft-list li:before {
+  content: '-';
+  font-size: 16px;
+  color: #505050;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+}
+
+.related-prod-wrap {
+  border-top: 1px dotted #000;
+  padding: 20px 0;
+}
+
+.related-prod-wrap .r-heading {
+  font-size: 18px;
+  color: #505050;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.related-prod-wrap li {
+  height: auto;
+  margin-bottom: 0;
 }
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
