@@ -68,5 +68,25 @@ $(document).ready(function(){
     $('.like').click(function(){
 
         $(this).toggleClass('active')
+    });
+
+
+
+    $('.list-grid-wrap a').click(function(){
+
+        var targetName=$(this).attr('data-name');
+        $('.list-grid-wrap a').removeClass('active');  
+        $(this).addClass('active');
+
+        if($('.products-wrap').hasClass('gridview')){
+
+            $('.products-wrap').removeClass('gridview');
+            $('.products-wrap').addClass(targetName);
+        }else{
+            $('.products-wrap').removeClass('listview');
+            $('.products-wrap').addClass(targetName);
+        }
+
+       
     })
 });

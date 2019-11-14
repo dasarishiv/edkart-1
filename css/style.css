@@ -1267,6 +1267,64 @@ section {
   height: 420px;
 }
 
+.prod-description {
+  font-size: 14px;
+  color: #848484;
+  display: none;
+  margin-top: 10px;
+}
+
+.listview li {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.listview li > a {
+  display: block;
+}
+
+.listview li .product-txt-wrap {
+  display: block;
+  text-align: center;
+}
+
+.listview li .product-txt-wrap .rating {
+  margin: 0 auto;
+}
+
+.listview li .product-txt-wrap .availabilty-txt {
+  text-align: center;
+  display: block;
+}
+
+.listview li .product-txt-wrap .offer-wrap {
+  display: block;
+  margin-right: 10px;
+}
+
+.listview li .product-txt-wrap .like-txt {
+  display: block;
+}
+
+.listview li .product-txt-wrap .like-txt .like {
+  float: right;
+  margin: 5px 10px;
+}
+
+.listview .prod-description {
+  display: block;
+}
+
+.listview .pagination li {
+  display: inline-block;
+  width: auto;
+}
+
+.listview .pagination .page-item a {
+  display: inline-block;
+}
+
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   border-radius: 10px !important;
   background: #FF5B4A !important;
@@ -1621,6 +1679,50 @@ footer .copy-right .paypal {
     margin-right: auto;
   }
   /* @dekstop end*/
+  .listview li {
+    width: 100%;
+    height: auto;
+    display: table;
+  }
+  .listview li > a {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 20px;
+  }
+  .listview li .product-txt-wrap {
+    display: table-cell;
+    vertical-align: top;
+    text-align: left;
+  }
+  .listview li .product-txt-wrap .rating {
+    margin: 0;
+  }
+  .listview li .product-txt-wrap .availabilty-txt {
+    text-align: left;
+    display: inline-block;
+  }
+  .listview li .product-txt-wrap .offer-wrap {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .listview li .product-txt-wrap .like-txt {
+    display: inline-block;
+  }
+  .listview li .product-txt-wrap .like-txt .like {
+    float: right;
+    margin: 5px 10px;
+  }
+  .listview .prod-description {
+    display: block;
+  }
+  .listview .pagination li {
+    display: inline-block;
+    width: auto;
+  }
+  .listview .pagination .page-item a {
+    display: inline-block;
+    padding-right: 10px;
+  }
 }
 
 /*@tab*/

@@ -1274,7 +1274,67 @@ section{
  }
 
 
+ .prod-description{
+     font-size: 14px;
+     color: #848484;
+     display: none;
+     margin-top: 10px;
+ }
 
+.listview{
+
+    li{
+
+        width: 100%;
+        height: auto;
+        display: block;
+        >a{
+            display:block;
+            
+        }
+        
+
+        .product-txt-wrap{
+            display:block;
+           
+            text-align: center;
+
+            .rating{
+                margin: 0 auto;
+            }
+
+            .availabilty-txt{
+                text-align: center;
+                display:block;
+                
+            }
+            .offer-wrap {
+                display: block;
+                margin-right: 10px;
+            }
+            .like-txt{
+                display: block;
+            }
+            .like-txt .like{
+                float:right;
+                margin: 5px 10px;
+            }
+        }
+    }
+    .prod-description{
+        display: block;
+    }
+.pagination{
+
+    li{
+        display: inline-block;
+        width: auto;
+    }
+    .page-item a{
+        display: inline-block;
+    }
+}
+}
 
 
 
@@ -1733,6 +1793,62 @@ margin-right: auto;
 
 
 
+.listview{
+
+    li{
+
+        width: 100%;
+        height: auto;
+        display: table;
+        >a{
+            display:table-cell;
+            vertical-align: middle;
+            padding-right: 20px;
+        }
+        
+
+        .product-txt-wrap{
+            display:table-cell;
+            vertical-align: top;
+            text-align: left;
+
+            .rating{
+                margin: 0;
+            }
+
+            .availabilty-txt{
+                text-align: left;
+                display: inline-block;
+                
+            }
+            .offer-wrap {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .like-txt{
+                display: inline-block;
+            }
+            .like-txt .like{
+                float:right;
+                margin: 5px 10px;
+            }
+        }
+    }
+    .prod-description{
+        display: block;
+    }
+.pagination{
+
+    li{
+        display: inline-block;
+        width: auto;
+    }
+    .page-item a{
+        display: inline-block;
+        padding-right: 10px;
+    }
+}
+}
 
 
 }
