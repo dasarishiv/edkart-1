@@ -1750,6 +1750,85 @@ section {
   width: 100%;
 }
 
+.school-details {
+  overflow: hidden;
+}
+
+.school-details .school-logo {
+  float: left;
+  margin-right: 20px;
+}
+
+.school-details .school-name > div {
+  font-size: 20px;
+  color: #18131D;
+  margin-bottom: 5px;
+}
+
+.school-details .school-name .school-code {
+  color: #F75842;
+  font-size: 16px;
+  text-align: left;
+}
+
+.settings-link {
+  font-size: 24px;
+  color: #000;
+  background: url(../images/profile-details.svg) no-repeat left center;
+  padding: 10px 50px;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+.profile-wrap {
+  padding: 30px 0;
+}
+
+.left-menu li {
+  margin-bottom: 20px;
+}
+
+.left-menu li a {
+  display: block;
+  font-size: 18px;
+  color: #000;
+  padding-left: 45px;
+}
+
+.left-menu li a.active {
+  font-weight: 700;
+  background: url(../images/link-arrow.png) no-repeat left center;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #4E4E4E;
+  font-weight: 400;
+}
+
+.form-group .form-control {
+  border: 1px solid #8D8D8D;
+}
+
+.form-group .form-control:disabled {
+  background: #F2F3F7;
+  color: #989898;
+}
+
+.form-group .sm {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.form-group .form-control.error {
+  border: 1px solid #FF5B4A;
+  color: #FF5B4A;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   border-radius: 10px !important;
   background: #FF5B4A !important;
@@ -2149,6 +2228,14 @@ footer .copy-right .paypal {
   }
   .tracking-wrap {
     width: 415px;
+  }
+  .school-details {
+    padding-top: 25px;
+    float: right;
+    width: 340px;
+  }
+  .school-details .school-code {
+    text-align: right;
   }
 }
 
