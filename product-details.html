@@ -19,6 +19,7 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+ 
     </head>
     <body>
             <div class="main-wrapper">
@@ -54,22 +55,82 @@
                                             </div>
                                           <a class="navbar-brand" href="#"><img  src="images/logo.svg" alt="EDKart">
                                           </a>
-                                          <a class="top-btn anim-btn mobile-only pull-right " href="#">
-                                                  <span>
-                                                    <span>
-                                                      <span>Sign Up/ Sign in</span>
-                                                    </span>
-                                                  </span>
-                                                </a>
+                                        
+
+                                          <div class="cart-popup dropdown">
+                                                <a class="top-btn anim-btn mobile-only" href="javascript:void(0)" id="dropdownMenuButton" data-toggle="dropdown">
+                                                        <span>
+                                                          <span>
+                                                            <span> <img src="images/bag-icon.svg" alt="" class="bag-icon"> <span class="count">1</span> Bag(0)</span>
+                                                          </span>
+                                                        </span>
+                                                      </a>
+
+                                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                          <div class="cart-product">
+                                                              <div class="cart-image"><img src="images/shirt.png" alt=""></div>
+                                                              <div class="cart-info">
+                                                                  <div class="item-name">Shirt – Santa Maria</div>
+                                                                  <div class="c-name">By Edkart</div>
+                                                                  <div class="product-txt-wrap">
+                                                    
+                                                                        <div class="price"><div class="strike-price">₹ 1,590.00 </div> <span>₹ 1,352.00</span></div>
+                     
+                                                                             </div>
+                                                              </div>
+                                                          </div>
+                                                          
+                                                          <hr class="seperator">
+                                                          
+                                                          <div class="bill-amount">
+                                                              <span class="total-txt">Total</span>
+
+                                                              <span class="total-amt">₹ 1590</span>
+                                                          </div>
+
+                                                          <a href="#" class="primary-btn">CHECK OUT</a>
+
+                                                          <a href="#" class="view-cart-link">OR VIEW CART</a>
+                                                        </div>
+                                        </div>
                                         </div>
                                         <div  class="navbar-collapse collapse desktop-only">
-                                              <a class="top-btn anim-btn" href="#">
-                                                      <span>
-                                                        <span>
-                                                          <span>Sign Up/ Sign in</span>
-                                                        </span>
-                                                      </span>
-                                                    </a>
+                                                <div class="cart-popup dropdown">
+                                                        <a class="top-btn anim-btn" href="javascript:void(0)" id="dropdownMenuButton" data-toggle="dropdown">
+                                                                <span>
+                                                                  <span>
+                                                                    <span> <img src="images/bag-icon.svg" alt="" class="bag-icon"> <span class="count">1</span> Bag(0)</span>
+                                                                  </span>
+                                                                </span>
+                                                              </a>
+
+                                                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                  <div class="cart-product">
+                                                                      <div class="cart-image"><img src="images/shirt.png" alt=""></div>
+                                                                      <div class="cart-info">
+                                                                          <div class="item-name">Shirt – Santa Maria</div>
+                                                                          <div class="c-name">By Edkart</div>
+                                                                          <div class="product-txt-wrap">
+                                                            
+                                                                                <div class="price"><div class="strike-price">₹ 1,590.00 </div> <span>₹ 1,352.00</span></div>
+                             
+                                                                                     </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  
+                                                                  <hr class="seperator">
+                                                                  
+                                                                  <div class="bill-amount">
+                                                                      <span class="total-txt">Total</span>
+
+                                                                      <span class="total-amt">₹ 1590</span>
+                                                                  </div>
+
+                                                                  <a href="#" class="primary-btn">CHECK OUT</a>
+
+                                                                  <a href="#" class="view-cart-link">OR VIEW CART</a>
+                                                                </div>
+                                                </div>
                                              
               
                                           <ul class="nav navbar-nav navbar-right ">
@@ -122,16 +183,18 @@
                                            
                                             <div class="prod-thumb-carousel owl-carousel owl-theme">
                                                 <div class="item">
-                                                        <img src="images/shirt.png" alt="">
+                                                        <img src="images/shirt.png">
+
+
                                                 </div>
                                                 <div class="item">
-                                                        <img src="images/shirt.png" alt="">
+                                                        <img src="images/shirt.png" >
                                                 </div>
                                                 <div class="item">
-                                                        <img src="images/shirt.png" alt="">
+                                                        <img src="images/shirt.png">
                                                 </div>
                                                 <div class="item">
-                                                        <img src="images/shirt.png" alt="">
+                                                        <img src="images/shirt.png" >
                                                 </div>
                                             </div>
                                         </div>
@@ -204,7 +267,7 @@
                                                                 </div> 
                                                                 
                                                                 <div class="offer-wrap">
-                                                                        <a href="#" class="primary-btn">ADD TO CART</a> 
+                                                                        <a href="javascript:void(0)" class="primary-btn" data-toggle=modal data-target="#cart-modal">ADD TO CART</a> 
                                                                     <span class="offer-txt">
                                                                             60%
                                                                             OFF
@@ -696,12 +759,59 @@
             </div>
         
 
+            
+             <div class="modal fade cart-modal" id="cart-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                         <a href="javascript:void(0)" class="modal-close" data-dismiss="modal">
+                             <img src="images/close-icon.png" alt="">
+                         </a>
+                        <div class="modal-body">
+                                <div class="cart-product">
+                                        <div class="cart-image"><img src="images/shirt.png" alt=""></div>
+                                        <div class="cart-info">
+                                            <div class="prod-name">Shirt – Santa Maria for boys by Edkart</div>
+                                            
+                                            
+                                            <div class="alert alert-success">
+                                                    Is added to your shopping cart.
+                                            </div>
+                                            
+                                            <a href="#" class="btn-3 mr-20">CONTINUE SHOPPING</a>
+                                            <a href="#" class="btn-3">CHECKOUT</a>
+
+                                        </div>
+                                    </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/owl.carousel.js"></script>
+         <script src="js/owl.carousel.js"></script>
         <script src="js/bootstrap-tabcollapse.js"></script>
         <script src="js/custom.js"></script>
+
+       
     </body>
 </html>
