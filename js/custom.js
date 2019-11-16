@@ -107,6 +107,7 @@ $(document).ready(function(){
         $('.list-grid-wrap a').removeClass('active');  
         $(this).addClass('active');
 
+        
         if($('.products-wrap').hasClass('gridview')){
 
             $('.products-wrap').removeClass('gridview');

@@ -1,5 +1,5 @@
 /* Roboto font styles*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
@@ -1891,13 +1891,106 @@ section{
     font-weight: 300;
     margin-bottom: 20px;
 
+    span{
+        font-size: 12px;
+        padding-top: 12px;
+
+        a{
+            color: #000;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+a{
+    color:#6C63FF;
+}
+
+.address-wrap{
+     
+
+    .address-heading{
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 20px;
+    }
+
+    address{
+
+        div{
+            font-size: 20px;
+            color: #000;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        span{
+            display: block;
+        }
+        color: #000;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #707070;
+    }
+}
+
+.address-btn,.address-btn:focus,.address-btn:hover{
+
+    background: #707070;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+
+    &.active{
+
+        background: #6C63FF;
+    }
+
+}
+
+.no-border{
+    border: none!important;
 }
 
 
+.address-main-title{
+    font-size: 28px;
+    font-family: Nunito;
+    font-weight: 500;
+    color: #000;
+    background: url(../images/address-icon.png) no-repeat left center;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.add-txt{
+    font-size: 24px;
+    color: #6E6E6E;
+}
 
 
+.fz-20{
+    font-size: 20px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
 
+.parent-add-wrap{
+    margin-top: 80px;
+}
 
+.address-svg-wrap{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
 
 
 
@@ -2412,7 +2505,7 @@ margin-right: auto;
     width: 415px;
 }
 .school-details{
-    padding-top: 25px;
+    padding-top: 30px;
     float: right;
     width: 340px;
 
