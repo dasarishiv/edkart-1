@@ -47,7 +47,7 @@ ul{
 }
   .navbar-brand>img {
     height: 100%;
-    padding:20px 10px;
+    padding:10px;
     width: 100%;
   }
 
@@ -93,7 +93,7 @@ ul{
     margin-bottom: 5px;
     position: relative;
     
-    background: #5A3471;
+    background: #0F3756;
     border-radius: 3px;
     
     z-index: 1;
@@ -298,7 +298,7 @@ width: 35px;
     border-radius: 0px;
      margin: 40px 0;
     position: relative;
-    border:1px solid #FF6347;
+    border:1px solid #FF5B4A;
     input{
         border: none;
         color: #B9B8B7;
@@ -452,7 +452,7 @@ section{
         span{
             font-size: 14px;
             font-weight: 700;
-            color: #FF6347
+            color: #FF5B4A
         }
     }
 
@@ -488,7 +488,7 @@ section{
   }
 
   .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-      background: #FF6347
+      background: #FF5B4A
   }
 
   .services-list{
@@ -517,7 +517,7 @@ section{
     }
   }
   .label-list{
-      margin: 60px 0;
+      margin: 60px 0 0;
  a{
 
     margin-bottom: 20px;
@@ -665,11 +665,11 @@ section{
             margin: 0 3px;
             transition: 0.4s all;
             &.active{
-                color: #FF6347;
+                color: #FF5B4A;
             }
 
             &:hover,&:focus{
-                color: #FF6347;
+                color: #FF5B4A;
                 background: none;
                 border: 1px solid #707070;
 
@@ -926,7 +926,7 @@ section{
         }
 
         .code{
-            color: #F75842;
+            color: #FF5B4A;
             font-size: 18px;
             display: block;
             text-align: center;
@@ -1046,8 +1046,9 @@ section{
 .bag-icon{
     width: 20px;
     height: 20px;
-    margin-right: 10px;
+    margin-right: 5px;
     vertical-align: middle;
+    margin-top: -3px;
 }
 
 .alert-info{
@@ -1162,11 +1163,11 @@ section{
              transition: 0.2s all;
          }
            &:hover svg g,&:focus svg g,&.active svg g{
-            stroke: #FF6347;
+            stroke: #FF5B4A;
            }  
 
            &:hover svg path,&:focus svg path,&.active svg path{
-            stroke: #FF6347;
+            stroke: #FF5B4A;
            }  
              
              
@@ -1222,8 +1223,8 @@ section{
 .prod-image{
     text-align: center;
     display: block;
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
     overflow: hidden;
     img{
@@ -1232,7 +1233,7 @@ section{
 }
 
 .like-txt{
-    font-size: 20px;
+    font-size: 18px;
     color: #414140;
     font-weight: 700;
 
@@ -1273,7 +1274,7 @@ section{
 }
 
 .availabilty-txt{
-    font-size: 22px;
+    font-size:18px;
     font-weight: 500;
     color: #FF5B4A;
     margin-top: 10px;
@@ -1288,7 +1289,7 @@ section{
 
     li{
         margin-bottom: 40px;
-        height: 420px;
+        height: 380px;
     }
  }
 
@@ -1354,7 +1355,9 @@ section{
     }
 }
 }
-
+.prod-thumb-carousel{
+    z-index: 0;
+}
 
 .prod-thumb{
 
@@ -1399,10 +1402,10 @@ section{
         
         span{
             text-transform: uppercase;
-            font-size:18px;
+            font-size:14px;
             color: #414140;
             font-weight: 700;
-            width: 150px;
+            width: 130px;
             display: inline-block;
     
         }
@@ -1754,7 +1757,7 @@ section{
     }
 
     .country-phone{
-        width: 79%;
+        width: 75%;
 
         &.correct{
 
@@ -1807,7 +1810,7 @@ section{
     }
 
     .school-code{
-        color: #F75842;
+        color: #FF5B4A;
         font-size: 16px;
         text-align: left;
     }
@@ -1992,6 +1995,120 @@ a{
     text-align: center;
 }
 
+.blog-list{
+
+    margin-top: 40px;
+
+    li{
+        a{
+            display: block;
+            img{
+                width: 100%!important;
+            }
+        }
+
+        .blog-desc{
+            margin-top: 20px;
+            font-size: 18px;
+            color: #3D3E47;
+        }
+
+       
+    }
+
+    .owl-dots{
+        display: none;
+    }
+}
+
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.fz22{
+    font-size: 22px;
+}
+
+.support-items{
+    margin-top: 60px;
+    a{
+        margin: 20px 0;
+    }
+}
+
+
+
+
+
+
+a.profile-avatar:before{
+
+    height: 40px;
+    width: 1px;
+    content: '';
+    background: #707070;
+    left:-20px;
+    top:0;
+    position: absolute;
+
+}
+
+a.profile-avatar {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    background: #A7A8C2;
+    border-radius: 50%;
+    color: #fff;
+    padding-top: 9px;
+    font-weight: 700;
+    position: relative;
+    margin-left: 25px;
+}
+
+
+.anim-btn{
+    margin-left: 30px!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2017,14 +2134,17 @@ a{
     }
     background: #D0CFD8;
     padding: 50px 0 20px;
+    .col-md-2{
 
+        padding: 0;
+    }
     .col-half-offset{
         margin-left:4.166666667%
     }
 
     .footer-heading{
-        font-size: 17px;
-        font-weight: 700;
+        font-size: 15px;
+        font-weight: 500;
         color: #000;
     }
 
@@ -2100,41 +2220,41 @@ a{
         padding:20px 0;
         position: relative;
 
-        .footer-img-wrap{
-            display: block;
-            text-align: center;
-            margin-top: 20px;
-            span{
-                width:60px;
-            height: 40px;
-            display: inline-block;
-            }
-        }
-
-        .ae{
-            background: url(../images/ae.svg) no-repeat center center/contain;            
-
-        }
-        .master{
-            background: url(../images/master.svg) no-repeat center center/contain;            
-
-        }
-        .visa{
-            background: url(../images/visa.svg) no-repeat center center/contain;            
-
-        }
-        .paypal{
-            background: url(../images/paypal.svg) no-repeat center center/contain;            
-
-        }
-
-     }
+       
   }
 
 .full-width{
     width: 100%;
 }
+.footer-img-wrap{
+    
+    text-align: center;
+    margin-top: 20px;
+    span{
+        width:60px;
+    height: 40px;
+    display: inline-block;
+    }
+}
 
+.ae{
+    background: url(../images/ae.svg) no-repeat center center/contain;            
+
+}
+.master{
+    background: url(../images/master.svg) no-repeat center center/contain;            
+
+}
+.visa{
+    background: url(../images/visa.svg) no-repeat center center/contain;            
+
+}
+.paypal{
+    background: url(../images/paypal.svg) no-repeat center center/contain;            
+
+}
+
+}
 
 
 
@@ -2160,7 +2280,7 @@ a{
         width: auto;
     }
     .navbar-brand>img {
-        padding: 15px 30px;
+        padding: 5px 25px;
     }
     .navbar{
         margin-bottom: 30px;
@@ -2172,13 +2292,13 @@ a{
     }
 
     .nav>li>a{
-        padding: 10px 20px
+        padding: 10px 15px
     }
     .nav-tabs li > a{
         font-size: 16px;
     }
     .top-btn{
-        margin-left: 40px;
+        margin-left: 10px;
         font-size: 14px;
         margin-top: 1px;
     }
@@ -2513,6 +2633,14 @@ margin-right: auto;
         text-align: right;
     }
 }
+
+
+.blog-list{
+
+    .owl-dots{
+        display: block;
+    }
+}
 }
 
 
@@ -2569,7 +2697,7 @@ margin-right: auto;
     z-index: 9;
     height: 2px;
     width: 100%;
-    background-color: #FF6347;
+    background-color: #FF5B4A;
   }
   .anim-btn > * > *:before {
     top: 0;
@@ -2594,7 +2722,7 @@ margin-right: auto;
     z-index: 9;
     height: 100%;
     width: 2px;
-    background-color: #FF6347;
+    background-color: #FF5B4A;
   }
   .anim-btn > * > * > *:before {
     left: 0;
@@ -2718,12 +2846,12 @@ margin-right: auto;
   
   .rating > input:checked ~ label, /* show gold star when clicked */
   .rating:not(:checked) > label:hover, /* hover current star */
-  .rating:not(:checked) > label:hover ~ label { color: #FF6347;  } /* hover previous stars in list */
+  .rating:not(:checked) > label:hover ~ label { color: #FF5B4A;  } /* hover previous stars in list */
   
   .rating > input:checked + label:hover, /* hover current star when changing rating */
   .rating > input:checked ~ label:hover,
   .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-  .rating > input:checked ~ label:hover ~ label { color: #FF6347;  } 
+  .rating > input:checked ~ label:hover ~ label { color: #FF5B4A;  } 
 
 
 //   custom radio styles
