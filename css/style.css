@@ -44,7 +44,7 @@ ul {
 .navbar-brand {
   height: auto;
   padding: 0;
-  width: 130px;
+  width: 120px;
 }
 
 .navbar-brand > img {
@@ -1724,7 +1724,7 @@ section {
 }
 
 .phone-field .country-phone {
-  width: 75%;
+  width: 70%;
 }
 
 .phone-field .country-phone.correct {
@@ -1993,10 +1993,6 @@ a.profile-avatar {
   font-weight: 700;
   position: relative;
   margin-left: 25px;
-}
-
-.anim-btn {
-  margin-left: 30px !important;
 }
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
@@ -2412,6 +2408,9 @@ footer .paypal {
   }
   .blog-list .owl-dots {
     display: block;
+  }
+  .anim-btn {
+    margin-left: 30px !important;
   }
 }
 

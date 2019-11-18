@@ -43,7 +43,7 @@ ul{
 .navbar-brand{
     height: auto;
     padding: 0;
-    width:130px
+    width:120px
 }
   .navbar-brand>img {
     height: 100%;
@@ -1757,7 +1757,7 @@ section{
     }
 
     .country-phone{
-        width: 75%;
+        width: 70%;
 
         &.correct{
 
@@ -2069,9 +2069,6 @@ a.profile-avatar {
 }
 
 
-.anim-btn{
-    margin-left: 30px!important;
-}
 
 
 
@@ -2640,6 +2637,11 @@ margin-right: auto;
     .owl-dots{
         display: block;
     }
+}
+
+
+.anim-btn{
+    margin-left: 30px!important;
 }
 }
 
